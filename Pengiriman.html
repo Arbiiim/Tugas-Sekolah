@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        var pengirim = (prompt("Nama Pengrim: "));
+        var penerima = (prompt("Nama Penerima: "));
+        var jarak = (prompt("Jarak pengirman(km): "));
+        var alamat = (prompt("Alamat Penerima: "))
+        var jenis = (prompt("Jenis barang: "))
+        var berat = (prompt("Berat barang(kg): "))
+
+        var biayajarak = jarak * 10000;
+        var potonganjarak = "";
+        if (biayajarak >= 50000) {
+            potonganjarak = biayajarak * 0.1
+        }else{
+            potonganberat = 0
+        }
+
+        var biayaberat = berat * 5000;
+        var potonganberat = "";
+        if (biayaberat >= 100000) {
+            potonganberat = biayajarak * 0.05
+        }else{
+            potonganberat = 0
+        }
+
+        var total_potongan = potonganjarak + potonganberat;
+        var biaya_pengiriman = (biayajarak + biayaberat) - total_potongan;
+
+        document.write(`<strong> Detail Pengiriman </strong> <br> Nama Pengirim : ${pengirim} <br> Nama Penerima : ${penerima} <br> Jarak : ${jarak}km <br> Alamt : ${alamat} <br> Jenis barang : ${jenis} <br> Berat barang : ${berat}kg <br> Potonagan : ${total_potongan} <br> Total biaya ${biaya_pengiriman} `)
+
+    </script>
+</body>
+</html>
