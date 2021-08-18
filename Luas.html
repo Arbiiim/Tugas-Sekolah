@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+         var pilih = prompt("silahkan pilih ingin menghitung Luas Persegi , Persegi Panjang , Jajargenjang , Segitiga")
+
+         if(pilih === "Persegi"){
+         var sisi = prompt("Masukkan sisi ")
+
+         function hitung(sisi){
+             var hasil = sisi*2;
+             return hasil
+         }
+
+         alert("luas = " + hitung(sisi))
+         }
+
+         else if(pilih === "Persegi Panjang"){
+         var panjang = prompt("Masukkan panjang")
+         var lebar = prompt("Masukkan lebar")
+         
+         function hitung(panjang,lebar){
+             var hasil = panjang*lebar;
+             return hasil
+         }
+
+         alert("luas = " + hitung(panjang,lebar))
+         }
+
+         else if(pilih === "Jajargenjang"){
+         var alas = prompt("Masukkan alas")
+         var tinggi = prompt("Masukkan tingi")
+         
+         function hitung(alas,tinggi){
+             var hasil = alas*tinggi;
+             return hasil
+         }
+
+         alert("luas = " + hitung(alas,tinggi))
+         }
+
+         else if(pilih === "Segitiga"){
+         var alas = prompt("Masukkan alas")
+         var tinggi = prompt("Masukkan tinggi")
+         
+         function hitung(alas,tinggi){
+             var hasil = alas*tinggi/2;
+             return hasil
+         }
+
+         alert("luas = " + hitung(alas,tinggi))
+         }
+
+    </script>
+
+</body>
+</html>
