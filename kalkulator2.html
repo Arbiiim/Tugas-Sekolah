@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" placeholder="Masukkan Angka" id="angkapertama">
+    <input type="text" placeholder="Maukkan Angka" id="angkakedua">
+
+    <button onclick="tambah()">tambah</button>
+    <button onclick="kurang()">kurang</button>
+    <button onclick="kali()">kali</button>
+    <button onclick="bagi()">bagi</button>
+
+    <input type="text" placeholder="hasil" id="hasil">
+
+    <script>
+        function tambah(){
+            var angka1=document.getElementById('angkapertama').value
+            var angka2=document.getElementById('angkakedua').value
+            var angkabaru1=Number(angka1)
+            var angkabaru2=Number(angka2)
+            var hasil = angkabaru1 + angkabaru2
+            document.getElementById('hasil').value = hasil
+        }
+        function kurang(){
+            var angka1=document.getElementById('angkapertama').value
+            var angka2=document.getElementById('angkakedua').value
+            var angkabaru1=Number(angka1)
+            var angkabaru2=Number(angka2)
+            var hasil = angkabaru1 - angkabaru2
+            document.getElementById('hasil').value = hasil
+        }
+        function kali(){
+            var angka1=document.getElementById('angkapertama').value
+            var angka2=document.getElementById('angkakedua').value
+            var angkabaru1=Number(angka1)
+            var angkabaru2=Number(angka2)
+            var hasil = angkabaru1 * angkabaru2
+            document.getElementById('hasil').value = hasil
+        }
+        function bagi(){
+            var angka1=document.getElementById('angkapertama').value
+            var angka2=document.getElementById('angkakedua').value
+            var angkabaru1=Number(angka1)
+            var angkabaru2=Number(angka2)
+            var hasil = angkabaru1 / angkabaru2
+            document.getElementById('hasil').value = hasil
+        }
+        
+    </script>
+</body>
+</html>
